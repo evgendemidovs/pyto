@@ -32,7 +32,15 @@ p {
 color: #e8bb84;
 font-size: 20px;
 }
-
+.navbar navbar-inverse navbar-fixed-top
+{
+left: 300px;
+}
+.nav navbar-nav
+{
+position: relative;
+left: 100px;
+}
   </style>
 </head>
 
@@ -46,7 +54,7 @@ font-size: 20px;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'home' %}"><h4>Demidoff</h4></a>
+          <a class="navbar-brand" href="{% url 'home' %}"><h5>Demidoff</h5></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -62,6 +70,7 @@ font-size: 20px;
 
             <li><a href="{% url 'contact' %}"><h5>Контакты</h5></a></li>
             <li><a href="{% url 'contact' %}"><h5>Оплата и Доставка</h5></a></li>
+            <li><a href="{% url 'contact' %}"><h5>О нас</h5></a></li>
                       </ul>
           <form class="navbar-form navbar-left">
       <div class="form-group">
@@ -71,8 +80,10 @@ font-size: 20px;
 
 
 
-                             <li><a href="/order/" id="cart"><i class="fa fa-shopping-cart"></i><img class="cartimg" src="http://demidoff.us.to:81/korzina-pusta.png" width="40" height="40" alt="adafa"><span class="badge">0</a></li>
+                             <li><a href="/order/" id="cart"><i class="fa fa-shopping-cart"></i><img class="cartimg" src="http://demidoff.us.to:81/korzina-pusta.png" width="33" height="33" alt="adafa"><span class="badge">0</a></li>
                <ul class="navbar-right">
+
+
         </div><!--/.nav-collapse -->
       </div>
     </nav>

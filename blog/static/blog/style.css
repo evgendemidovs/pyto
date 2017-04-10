@@ -25,7 +25,10 @@ footer {
     width: 70%
 
 }
-
+.s-productscontainer2
+{
+width: 900px;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -120,11 +123,12 @@ body {
     margin-top: 5px;
     margin-left: 40px;
 }
-.price {
-    font-size: 20px;
-margin-left: 40px;
-display: block;
-}
+
+
+
+
+
+
 
 
 .main{
@@ -457,15 +461,7 @@ font-size: 50px;
 .row img {
 }
 
-.price {
-vertical-align: top;
-position: relative;
-right: 500px;
-left: 500px;
-top: 100px;
-width: 50%;
-font-size: 34px;
-}
+
 .row img {
 width: 50%;
 height: auto;

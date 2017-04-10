@@ -2,7 +2,7 @@
 {% block title %}
 Belt
 {% endblock %}
-{% block content %}
+    {% block content %}
 
 <div id="products">
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -27,16 +27,7 @@ a.button7 {
     height: 50px;
     display: inline-block;
 }
-.price {
-position: relative;
-    float: right;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  top: 0px;
-  left: -80px;
 
-}
 #product-content {
     float: right;
     width: 685px;
@@ -133,7 +124,11 @@ top: -150px;
 	     -o-transition: 500ms linear;
 					transition: 500ms linear;
 }
-
+#ProductDescription_0 {
+position: relative;
+bottom: 30px;
+width: 550px;
+}
 </style>
 
 
@@ -164,13 +159,6 @@ top: -150px;
 
     <div class="product-name-container">
 
-        <h3 itemprop="name">
-            <span class="name">Мужской кожаный ремень, ручной роботы</span>
-
-
-
-
-        </h3>
 
 
     </div>
@@ -180,9 +168,41 @@ top: -150px;
 
 <div id="description" itemprop="description">
     <div id="ProductDescription_0">
-        <p>
-           Частная мастерская «Demidoff» занимается изготовлением качественных товаров из натуральной кожи. Мы изготавливаем вещи исключительно ручной работы. Ремни с натуральной кожи, толщина 3,5 мм. Край закругленный для удобства и аккуратности изделия. Окрашенные качественными натуральными красками, oтполированные пчелиным воском. Покрытые дополнительно специальным составом (финиш) для длительного использования изделия. Пряжка из прочного металла под бронзу. Классический ремень, который изготовлен на долгие годы.
-        </p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th><h3>Demidoff</h3></th>
+        <th><h3>Ремень мужской</h3></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="danger">
+        <td><h4>Материал</h4></td>
+        <td><h4>Натуральная кожа</h4></td>
+
+      </tr>
+      <tr class="success">
+         <td><h4>Размер</h4></td>
+        <td><h4>{{ tovar.size }}</h4></td>
+
+      </tr>
+      <tr class="warning">
+         <td><h4>Цвет</h4></td>
+        <td><h4>{{ tovar.color }}</h4></td>
+
+      </tr>
+      <tr class="info">
+         <td><h4>Цена</h4></td>
+        <td><h4><span class="price">{{ tovar.price }} Грн</h4></td>
+
+
+
+
+      </tr>
+    </tbody>
+  </table>
     </div>
 </div>
 
@@ -208,8 +228,8 @@ top: -150px;
 <div id="bp">
 
 <a href="#" class="button">Добавить в корзину</a>
- <span class="price">
-    {{tovar.price}} Грн
+
+
 
 </span>
     </div>

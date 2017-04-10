@@ -24,6 +24,8 @@ class Category(models.Model):
 class Item(models.Model):
     name = models.CharField(max_length=255, verbose_name='name of project')
     price = models.IntegerField(verbose_name='price')
+    color = models.CharField(max_length=255, verbose_name='color')
+    size = models.CharField(max_length=255, verbose_name='size')
     image = models.CharField(max_length=255, verbose_name='http')
     image1 = models.CharField(max_length=255, verbose_name='http1')
     image2 = models.CharField(max_length=255, verbose_name='http2')
