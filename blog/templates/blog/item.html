@@ -41,10 +41,10 @@ a.button7 {
 }
 #bp {
 position: relative;
-float: right;
-width: 285px;
+float: center;
+width: 185px;
 margin: 40px;
-left: 320px;
+left: 400px;
 
 }
  P {
@@ -87,7 +87,7 @@ ul.hr li {
    }
 .summa {
 margin: 5px;
-left: 10%;
+left: 50%;
 }
 .cart
 {
@@ -126,9 +126,40 @@ top: -150px;
 }
 #ProductDescription_0 {
 position: relative;
-bottom: 30px;
+bottom: 1px;
 width: 550px;
 }
+.qwe
+{display: inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	min-width:80px;
+	padding: 22px 33px;
+	font-family: 'Lobster', cursive;
+	font-size: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+	background: #5e0d0c;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid #4c0300;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #a23227, /* inner glow */
+		inset 0 60px 60px -40px #ac3223, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+
+	position: relative;
+	overflow: visible; /* IE9 & 10 */
+	-webkit-transition: 500ms linear;
+	   -moz-transition: 500ms linear;
+	     -o-transition: 500ms linear;
+					transition: 500ms linear;
+}
+
 </style>
 
 
@@ -271,8 +302,8 @@ $(function(){
 
 
 <div class="cart">
-<a href="{% url 'order' %}" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-shopping-cart"></span> Оформить заказ</a>
+<a href="{% url 'order' %}" class="qwe">
+         </span> Оформить заказ</a>
        <span class="summa"> 0 </span></div>
 
 </div>

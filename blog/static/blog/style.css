@@ -426,13 +426,14 @@ font-size: 30px;
 margin-top: 0px;
 }
 .cart {
-width: 300px;
+width: 85px;
 
 font-size: 10px;
 position: relative;
 float: right;
-top: 235px;
-left: 150px;
+top: 35px;
+right: 210px;
+margin: 10px;
 
 
 }
