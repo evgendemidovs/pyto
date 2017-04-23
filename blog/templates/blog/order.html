@@ -232,14 +232,11 @@ $(function(){
 </div>
 
 
-<script src="validator.min.js"></script>
+<!--<script src="validator.min.js"></script>-->
 
     <script type="text/javascript">
 
 $(function(){
-
-
-});
     $(document).on('submit','#new_user_form',function(e){
         e.preventDefault();
         var da = "при";
@@ -255,15 +252,14 @@ $(function(){
 
                     csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
                 },
+                success:function(){
+                $.cookie('cart', JSON.stringify([]), { path : '/' });
+                    location.href = "thanks/";
+                }
 
-            success:function(){
-                location.href = "thanks/";
-
-
-        }
-
+        });
     });
-  });
+});
 
     </script>
 
