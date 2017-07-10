@@ -4,7 +4,7 @@ Belt
 {% endblock %}
     {% block content %}
 
-<div id="products">
+
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <style>
     #products {
@@ -99,13 +99,15 @@ top: -150px;
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
-	min-width:80px;
-	padding: 22px 33px;
+	min-width:60px;
+	padding: 12px 23px;
 	font-family: 'Lobster', cursive;
-	font-size: 26px;
-	line-height: 26px;
+	font-size: 20px;
+	line-height: 16px;
 	text-decoration: none;
+	left: 5%;
 	color: #FFF;
+	margin-bottom: 5%;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
 	background: #5e0d0c;
 	outline: none;
@@ -134,16 +136,18 @@ width: 550px;
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
-	min-width:80px;
-	padding: 22px 33px;
+	min-width:60px;
+	padding: 12px 23px;
 	font-family: 'Lobster', cursive;
-	font-size: 26px;
-	line-height: 26px;
+	font-size: 20px;
+	line-height: 16px;
 	text-decoration: none;
 	color: #FFF;
+	left: 5%;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
 	background: #5e0d0c;
 	outline: none;
+	margin-bottom: 5%;
 	border-radius: 15px;
 	border: 1px solid #4c0300;
 	box-shadow:
@@ -159,7 +163,9 @@ width: 550px;
 	     -o-transition: 500ms linear;
 					transition: 500ms linear;
 }
-
+.product-foto-galery {
+margin-top: 5%;
+}
 </style>
 
 
@@ -188,11 +194,11 @@ width: 550px;
 
 <div id="product-header">
 
-    <div class="product-name-container">
 
 
 
-    </div>
+
+
 
 </div>
 
@@ -204,22 +210,22 @@ width: 550px;
 
     </thead>
     <tbody>
-      <tr class="danger">
+      <tr>
         <td><h4>Материал</h4></td>
         <td><h4>Натуральная кожа</h4></td>
 
       </tr>
-      <tr class="success">
+      <tr>
          <td><h4>Размер</h4></td>
         <td><h4>{{ tovar.size }}</h4></td>
 
       </tr>
-      <tr class="warning">
+      <tr>
          <td><h4>Цвет</h4></td>
         <td><h4>{{ tovar.color }}</h4></td>
 
       </tr>
-      <tr class="info">
+      <tr>
          <td><h4>Цена</h4></td>
         <td><h4><span class="price">{{ tovar.price }} Грн</h4></td>
 
@@ -237,6 +243,7 @@ width: 550px;
 
 
       </div>
+
 {% load staticfiles %}
       <!-- Add jQuery library -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -251,23 +258,21 @@ width: 550px;
 	});
 </script>
 
-<div id="bp">
+
 
 <a href="#" class="button">Добавить в корзину</a>
 
 
 
-</span>
-    </div>
-</div>
 
 
 
-<div class="cart">
+
+
+
 <a href="{% url 'order' %}" class="qwe">
          </span> Оформить заказ</a>
-       <span class="summa"> 0 </span></div>
 
-</div>
+
 
 {% endblock %}
