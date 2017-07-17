@@ -110,7 +110,7 @@ def user(request):
             number = number
         )
 
-        text = "Name: " + name + "\n\r" + "Summ: " + summa + "number: " + number + "\n\r" + "zakaz: " + zakaz + "\n\r"
+        text = "Name: " + name + "\n\r" + "Summ: " + summa + "\n\r" + "number: " + number + "\n\r" + "zakaz: " + zakaz + "\n\r"
 
         send_mail('Subject', text, 'evgendemidovs@gmail.com',     ['evgen_demidov@ukr.net'], fail_silently=False)
         return  HttpResponse('')

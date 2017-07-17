@@ -8,22 +8,22 @@ Order
 
 <style>
     .price1 {
-    font-size: 30px;
-    display: block;
+        font-size: 20px;
+    display: inline-block;
     verticval-align: middle;
-    position: relative;
-    left: 400px;
-    top: 80px;
+    position: absolute;
+    left: 100%;
+    top: 23%;
     }
 
 .row {
 position: relative;
-right: -140px;
+left: 15%;
 display: block;
 width: 30%;
-margin-bottom: 10px;
-margin-top: 20px;
-top: 10px;
+margin-bottom: 5%;
+margin-top: 10%px;
+top: 5%;
 }
 .summa {
 position: relative;
@@ -73,18 +73,36 @@ left: 400px;
 bottom: -120px;
 }
 .button.alt {
-    position: relative;
-    left: -530px;
-    border: 3px solid #000;
-    font-size: 13px;
-    font-weight: normal;
-    color: #000;
-    text-transform: uppercase;
-    border-radius: 0;
-    background-color: #fff;
-    height: 50px;
-    display: inline-block;
-    margin: 40px;
+display: inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	min-width:60px;
+	padding: 12px 23px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	line-height: 16px;
+	text-decoration: none;
+	right: 45%;
+	color: #FFF;
+	margin-bottom: 5%;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+	background: #5e0d0c;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid #4c0300;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #a23227, /* inner glow */
+		inset 0 60px 60px -40px #ac3223, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+
+	position: relative;
+	overflow: visible; /* IE9 & 10 */
+	-webkit-transition: 500ms linear;
+	   -moz-transition: 500ms linear;
+	     -o-transition: 500ms linear;
+					transition: 500ms linear;
 }
 #place_order {
     float: right;
@@ -105,6 +123,13 @@ left: 9%;
 .total
 {
 margin-top: 10%;
+}
+img {
+position: relative;
+top: 26%;
+}
+.img1 {
+display: inline-block;
 }
 </style>
 
@@ -135,7 +160,7 @@ $(function(){
      json2 = $.parseJSON(arr1);
      summa1 = 0;
     $.each(json2, function( index, value ) {
-        $('.korzina').append('<div class="row"><div class="price1">'+value["price"]+'</div><div class="id" style="display:none">'+index+'</div> <img src="'+value["img"]+'"><div class="delete">X</div>');
+        $('.korzina').append('<div class="row"><div class="price1">'+value["price"]+'</div><div class="id" style="display:none">'+index+'</div> <div class="img1"><img src="'+value["img"]+'"></div><div class="delete">X</div></div>');
        summa1 = summa1 + parseInt(value['price']);
     });
     $('.total .summa').text(summa1);

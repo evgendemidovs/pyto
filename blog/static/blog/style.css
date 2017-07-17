@@ -9,10 +9,13 @@ p {
     }
 .delete {
 width: 100px;
+display: inline-block;
 height: 50px;
-position: relative;
-left: 700px;
-top: -50px;
+position: absolute;
+left: 160%;
+top: 37%;
+
+
 cursor: pointer;
 }
 footer {
