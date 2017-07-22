@@ -1,8 +1,9 @@
 
-p {
-  color: grey;
-  line-height: 150%;
-}
+
+
+
+
+
 }
 .main-contenth1 {
    margin-left: 50%;
@@ -42,7 +43,7 @@ body {
 .foo {
     position: absolute;
     left: 3%;
-
+    color: #333;
     height: 70px;
     width: 70%;
     }

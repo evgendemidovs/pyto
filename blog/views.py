@@ -18,7 +18,7 @@ def about(request):
 def contact(request):
     return render(request, 'blog/contact.html')
 def delivery(request):
-    return render(request, 'blog/wordered.html')
+    return render(request, 'blog/delivery.html')
 
 def belt(request):
     tovars = Item.objects.all()
