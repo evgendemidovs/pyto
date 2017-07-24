@@ -234,8 +234,8 @@ $(function(){
 
 
         <div class="form-group">
-            <label for="mobile">Mobile Phone</label>
-            <input name="mobile"  id="mobile" type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" required="required" data-error="Bruh, that email address is invalid" required class="form-control input-normal">
+            <label for="mobile">Телефон в формате 063*******</label>
+            <input name="mobile"  id="mobile" type="text" pattern="[0-9]{5,10}" maxlength="10" required="required" data-error="Bruh, that email address is invalid" required class="form-control input-normal">
             <p class="help-block">Телефон</p>
         </div>
 
@@ -247,7 +247,7 @@ $(function(){
             <label for="level">Delivery operator</label>
                 <select name="level" id="level" class="form-control input-normal">
                     <option value="1">Нова Почта</item>
-                    <option value="2">Мист Експрес</item>
+
                 </select>
             <p class="help-block">Доставка</p>
         </div>
